@@ -1,0 +1,13 @@
+# Core
+torch>=2.1
+numpy>=1.24
+
+# Frozen-encoder probe and metrics
+scikit-learn>=1.3
+
+# Optional TEDBench data adapters
+datasets>=2.18
+huggingface-hub>=0.20
+
+# Development
+pytest>=7.4

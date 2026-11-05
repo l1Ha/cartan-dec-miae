@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this implementation, please cite the Cartan-DEC-MiAE method paper and TEDBench."
+title: "Cartan-DEC-MiAE: Cartan moving frames and discrete exterior calculus for protein self-supervision"
+version: 0.1.0
+date-released: "2026-11-06"
+license: MIT
+authors:
+  - family-names: "Li"
+    given-names: "Hao"
+references:
+  - type: article
+    title: "ScientistTwo: Pioneering the Human Knowledge Frontier with Autonomous AI"
+    authors:
+      - family-names: "Nam"
+        given-names: "Jaehyun"
+      - family-names: "Yoon"
+        given-names: "Jinsung"
+      - family-names: "Pan"
+        given-names: "Yanzhou"
+      - family-names: "Wang"
+        given-names: "Yubo"
+      - family-names: "Meng"
+        given-names: "Rui"
+      - family-names: "Ranganathan"
+        given-names: "Parthasarathy"
+      - family-names: "Pfister"
+        given-names: "Tomas"
+    journal: "arXiv preprint arXiv:2609.19644"
+    year: 2026

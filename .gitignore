@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+
+# Tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Model / experiment artifacts
+runs/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.npz
+*.h5
+*.hdf5
+
+# Data
+datasets/
+data/
+*.pdb
+*.cif
+*.mmcif
+*.csv
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cartan-dec-miae"
+version = "0.1.0"
+description = "Cartan moving frames and discrete exterior calculus for self-supervised protein structure representation"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "l1Ha" }]
+keywords = [
+    "protein",
+    "self-supervised-learning",
+    "discrete-exterior-calculus",
+    "cartan-moving-frames",
+    "masked-autoencoder",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dependencies = [
+    "torch>=2.1",
+    "numpy>=1.24",
+]
+
+[project.optional-dependencies]
+probe = ["scikit-learn>=1.3"]
+data = ["datasets>=2.18", "huggingface-hub>=0.20"]
+dev = ["pytest>=7.4", "scikit-learn>=1.3"]
+
+[project.scripts]
+cartan-train = "cartan_dec.train:main"
+cartan-eval = "cartan_dec.evaluate:main"
+
+[tool.setuptools.packages.find]
+include = ["cartan_dec*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

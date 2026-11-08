@@ -54,6 +54,8 @@ def main() -> None:
     print("\nQuickstart complete.")
     if "probe" in results:
         print(f"Frozen-probe test metrics: {results['probe']}")
+    if "reconstruction" in results:
+        print(f"Masked-geometry reconstruction: {results['reconstruction']}")
 
 
 if __name__ == "__main__":
